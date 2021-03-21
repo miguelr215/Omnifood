@@ -13,7 +13,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky'); /* when user scrolls up past features section remove sticky nav class */
         }
     }, {
-        offset: '60px;' /* not sure why ; is inside quotes and also works without ; */
+        offset: '60px;' 
     });
     
     
@@ -76,8 +76,18 @@ $(document).ready(function() {
     
     /* Mobile navigation */
     $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon');
        
         nav.slideToggle(200);
+
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        } 
     });
     
     

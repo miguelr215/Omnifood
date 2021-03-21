@@ -1,74 +1,132 @@
 /* iPad and Smaller PCs: 1024px to 1200px */
 /* OUR WEBSITE ROW IS 1140px */
 @media only screen and (max-width: 1200px) {
-    .hero-text-box {  /*  text box that floats over hero image  */
-        width: 100%;  /* sets the width of the row to 100% of screen width */
-        padding: 0 2%;  /* 0 on top & bottom, 2% on sides */
+    .hero-text-box {
+        /*  text box that floats over hero image  */
+        width: 100%;
+        /* sets the width of the row to 100% of screen width */
+        padding: 0 2%;
+        /* 0 on top & bottom, 2% on sides */
     }
-    .row { padding: 0 2%; }
+
+    .row {
+        padding: 0 2%;
+    }
 }
 
 
 
 /* iPad in landscape is 1024px; Small table to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-    body { font-size: 18px; }
-    section { padding: 60px 0; }
-    
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .hero-text-box {
+        position: inherit;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hero-text-box h1 {
+        display: block;
+        font-size: 150%;
+    }
+
     .long-copy {
         width: 80%;
         margin-left: 10%;
     }
-    
-    .steps-box { margin-top: 10px; }
-    .works-step { margin-bottom: 40px; }
-    .steps-box:last-child { margin-top: 10px; }
-    .works-step:last-of-type { margin-bottom: 60px; }
-    
-    .app-screen { width: 50%; }
-    
-    .icon-small { 
+
+    .steps-box {
+        margin-top: 10px;
+    }
+
+    .works-step {
+        margin-bottom: 40px;
+    }
+
+    .steps-box:last-child {
+        margin-top: 10px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    .app-screen {
+        width: 50%;
+    }
+
+    .icon-small {
         width: 17px;
         margin-right: 5px;
     }
-    .city-feature { font-size: 85%; }
+
+    .city-feature {
+        font-size: 85%;
+    }
+
     .plan-box {
         width: 100%;
         margin-left: 0%;
     }
-    .plan-price { font-size: 250%; }
-    
-    .contact-form { width: 80%; }
+
+    .plan-price {
+        font-size: 250%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
 }
 
 
 /* iPad is 768px; Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    body { font-size: 16px; }
-    section { padding: 30px 0; }
-    
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
     .row,
-    .hero-text-box { 
+    .hero-text-box {
         padding: 0 4%;
     }
-    
-    .col { 
-        width: 100%;/* colums are no longer side by side but will take up entire width and be stacked */
+
+    .col {
+        width: 100%;
+        /* colums are no longer side by side but will take up entire width and be stacked */
         margin: 0 0 4% 0;
-    } 
-    
-    .main-nav { display: none; }
-    .mobile-nav-icon { display: inline-block; }
-    
+    }
 
     .main-nav {
+        display: none;
         float: left;
         margin-top: 35px;
         margin-left: 25px;
     }
-    
+
+    .mobile-nav-icon,
+    .mobile-nav-icon-style {
+        display: inline-block;
+    }
+
     .main-nav li {
-        display: block; /* force line break, stack links */
+        display: block;
+        margin: 10px;
+        /* force line break, stack links */
     }
 
     .main-nav li a:link,
@@ -78,50 +136,80 @@
         padding: 10px 0;
         font-size: 100%;
     }
-    
-    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li {
+        display: block;
+    }
 
     .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited { /* change how the links in the lists look in sticky navigation */
+    .sticky .main-nav li a:visited {
+        /* change how the links in the lists look in sticky navigation */
         padding: 10px 0;
     }
+
     .sticky .mobile-nav-icon-style {
         color: #555;
     }
+
     .sticky .mobile-nav-icon {
         margin-top: 10px;
+        display: inline-block;
     }
-    
 
     .long-copy {
         width: 100%;
         margin-left: 0%;
     }
-    
-    h1 { font-size: 180%; }
-    h2 { font-size: 150%; }
-    
-    .works-step { margin-bottom: 20px; }
-    .works-step:last-of-type { margin-bottom: 20px; }
-    
-    .works-step div { /* targets numbers in steps */
-        height: 40px; /* circle height */
-        width: 40px;  /* circle width */
+
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .works-step {
+        margin-bottom: 20px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .works-step div {
+        /* targets numbers in steps */
+        height: 40px;
+        /* circle height */
+        width: 40px;
+        /* circle width */
         padding: 4px;
-        margin-right: 15px; /* space between step number and text */
+        margin-right: 15px;
+        /* space between step number and text */
         font-size: 120%;
     }
-    
-    .steps-box:first-child { text-align: center; }
-    
-    .app-screen { width: 40px; }
+
+    .steps-box:first-child {
+        text-align: center;
+    }
+
+    .app-screen {
+        width: 40px;
+    }
 }
 
 
 /* Smaller phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    section { padding: 25px 0; }
-    .contact-form { width: 100%; }
+    section {
+        padding: 25px 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
 }
-
-

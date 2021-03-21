@@ -18,16 +18,22 @@ Gray Background color:  #eaeaea
 
 html,
 body {
-    background-color: #fff;  /*  default is white  */
-    color: #555;   /*  font color  */
+    background-color: #fff;
+    /*  default is white  */
+    color: #555;
+    /*  font color  */
     font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;  /*  from Google Fonts selected  */
+    font-weight: 300;
+    /*  from Google Fonts selected  */
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1}
+.clearfix {
+    zoom: 1
+}
+
 .clearfix:after {
     content: '.';
     clear: both;
@@ -41,15 +47,18 @@ body {
 /* ---------------------------------------- */
 
 .row {
-    max-width: 1140px;  
-    margin: 0 auto;  /* CENTER ROW ON PAGE shorthand: top & bottom are 0, left and right are auto  */
+    max-width: 1140px;
+    margin: 0 auto;
+    /* CENTER ROW ON PAGE shorthand: top & bottom are 0, left and right are auto  */
 }
 
 section {
-    padding: 80px 0; /* add whitespace around sections, using padding instead of margin because if we want to use a background-color for a section it will include the padding not the margin */
+    padding: 80px 0;
+    /* add whitespace around sections, using padding instead of margin because if we want to use a background-color for a section it will include the padding not the margin */
 }
 
-.box {  /* adds more space between colums in features section */
+.box {
+    /* adds more space between colums in features section */
     padding: 1%;
 }
 
@@ -58,46 +67,67 @@ section {
 h1,
 h2,
 h3 {
-    font-weight: 300;  /* larger fonts need smaller weight */
-    text-transform: uppercase;  /* changes all text to uppercase */
-    margin-bottom: 30px;  /* add whitespace between section title and content */
+    font-weight: 300;
+    /* larger fonts need smaller weight */
+    text-transform: uppercase;
+    /* changes all text to uppercase */
+    margin-bottom: 30px;
+    /* add whitespace between section title and content */
 }
 
-h2:after { /* draws line after h2 element */
+h2:after {
+    /* draws line after h2 element */
     display: block;
     height: 2px;
     background-color: #e67e22;
-    content: " ";  /* when doing after psuedo class, need to specify some content */
+    content: " ";
+    /* when doing after psuedo class, need to specify some content */
     width: 200px;
-    margin: 0 auto; /* centers line */
-    margin-top: 30px; /* space between h2 element */
+    margin: 0 auto;
+    /* centers line */
+    margin-top: 30px;
+    /* space between h2 element */
 }
 
 h1 {
-    margin-top: 0;  /* need to include to remove all margins from top of page, due to normalize.css */
-    margin-bottom: 20px;  /* to add space between the text and the buttons in the hero text box */
-    color: #fff;  /* set text color */
-    font-size: 240%;  /* 240% of global font size from html style */
-    word-spacing: 4px;  /* added for better visibility */
-    letter-spacing: 1px;  /* added for better visibility */
+    margin-top: 0;
+    /* need to include to remove all margins from top of page, due to normalize.css */
+    margin-bottom: 20px;
+    /* to add space between the text and the buttons in the hero text box */
+    color: #fff;
+    /* set text color */
+    font-size: 240%;
+    /* 240% of global font size from html style */
+    word-spacing: 4px;
+    /* added for better visibility */
+    letter-spacing: 1px;
+    /* added for better visibility */
 }
 
 h2 {
-    font-size: 180%;  /* larger heading but smaller than h1 */
-    word-spacing: 2px;  /* larger spacing but smaller than h1 */
-    text-align: center;  /* center section text */
-    letter-spacing: 1px;  /* added for better visibility */
+    font-size: 180%;
+    /* larger heading but smaller than h1 */
+    word-spacing: 2px;
+    /* larger spacing but smaller than h1 */
+    text-align: center;
+    /* center section text */
+    letter-spacing: 1px;
+    /* added for better visibility */
 }
 
 
 /* ------------PARAGRAPHS------------- */
 .long-copy {
-    line-height: 145%;  /* keep line height between 120% and 150% */
-    width: 70%;  /* shorten line length */
-    margin-left: 15%;  /* centers text, makes left and right margin total of 30% + width */
+    line-height: 145%;
+    /* keep line height between 120% and 150% */
+    width: 70%;
+    /* shorten line length */
+    margin-left: 15%;
+    /* centers text, makes left and right margin total of 30% + width */
 }
 
-.box p { /* makes paragraphs in features section more readable */
+.box p {
+    /* makes paragraphs in features section more readable */
     font-size: 90%;
     line-height: 145%;
 }
@@ -105,24 +135,30 @@ h2 {
 /* ------------ICONS------------- */
 .icon-big {
     font-size: 300%;
-    display: block;  /* block element so there is a line break */
+    display: block;
+    /* block element so there is a line break */
     color: #e67e22;
     margin-bottom: 10px;
-    /* margin: 10px auto;  to center icons */    
+    /* margin: 10px auto;  to center icons */
 }
 
 .icon-small {
-    display: inline-block; /* need to set to inline-block to adjust width and height */
+    display: inline-block;
+    /* need to set to inline-block to adjust width and height */
     color: #e67e22;
-    text-align: center; /* inline-block required */
-    width: 30px;/* increase icon width of inline-block */
-    font-size: 120%;  /* increase size of icon */
+    text-align: center;
+    /* inline-block required */
+    width: 30px;
+    /* increase icon width of inline-block */
+    font-size: 120%;
+    /* increase size of icon */
     margin-right: 7px;
-    
+
     /* secrets to align text and icons */
-    line-height: 120%; /* match font size */
+    line-height: 120%;
+    /* match font size */
     vertical-align: middle;
-    margin-top: -5px; 
+    margin-top: -5px;
 }
 
 /* ------------LINKS------------- */
@@ -147,28 +183,38 @@ a:active {
 .btn:link,
 .btn:visited,
 input[type=submit] {
-    display: inline-block;  /* changes <a> tag from inline element to inline-block element giving the element margin and padding attributes */
-    padding: 10px 30px;  /* 10px on top & bottom and 30px on left & right */
+    display: inline-block;
+    /* changes <a> tag from inline element to inline-block element giving the element margin and padding attributes */
+    padding: 10px 30px;
+    /* 10px on top & bottom and 30px on left & right */
     font-weight: 300;
-    text-decoration: none;  /* removes hyperlink display */
-    border-radius: 200px;  /* makes button round */
+    text-decoration: none;
+    /* removes hyperlink display */
+    border-radius: 200px;
+    /* makes button round */
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;  /* when hovering, background color, border and color will change slower */
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    /* when hovering, background color, border and color will change slower */
 }
 
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;  /* button color */
-    border: 1px solid #e67e22;  /* to make buttons the same size */
-    color: #fff;  /* white text */
-    margin-right: 15px;  /* space between buttons */
+    background-color: #e67e22;
+    /* button color */
+    border: 1px solid #e67e22;
+    /* to make buttons the same size */
+    color: #fff;
+    /* white text */
+    margin-right: 15px;
+    /* space between buttons */
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #e67e22;
-    color: #e67e22;  /* orange text color */
+    color: #e67e22;
+    /* orange text color */
 }
 
 .btn:hover,
@@ -186,7 +232,7 @@ input[type=submit]:active {
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid #bf6516;
-    color: #fff; 
+    color: #fff;
 }
 
 /* ---------------------------------------- */
@@ -195,64 +241,100 @@ input[type=submit]:active {
 
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* 70% transparent black on top of background & link to background image */
-    background-size: cover; /* shows whole image */
-    background-position: center;  /* centers image */
-    height: 100vh;  /* 100% of view port */
-    background-attachment: fixed;  /* image stays fixed while content moves over it */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    /* 70% transparent black on top of background & link to background image */
+    background-size: cover;
+    /* shows whole image */
+    background-position: center;
+    /* centers image */
+    height: 100vh;
+    /* 100% of view port */
+    background-attachment: fixed;
+    /* image stays fixed while content moves over it */
 }
 
-.hero-text-box {  /*  text box that floats over hero image  */
-    position: absolute;  /* required to lock the position verticalling and horizontally */
-    width: 1140px;  /* sets the width of the row */
-    top: 50%;  /* to center box */
-    left: 50%;  /* to center box */
+.hero-text-box {
+    /*  text box that floats over hero image  */
+    position: absolute;
+    /* required to lock the position verticalling and horizontally */
+    width: 100%;
+    /* sets the width of the row */
+    top: 50%;
+    /* to center box */
+    left: 50%;
+    /* to center box */
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);  /* to center box, translates 1/2 of elements width and height up and to the left  */
+    transform: translate(-50%, -50%);
+    /* to center box, translates 1/2 of elements width and height up and to the left  */
+}
+
+.hero-text-box a {
+    width: 190px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .logo {
     height: 100px;
     width: auto;
-    float: left;  /* keeps logo to the left */
-    margin-top: 20px; /* to align logo and menu bar */
+    float: left;
+    /* keeps logo to the left */
+    margin-top: 20px;
+    /* to align logo and menu bar */
 }
 
-.logo-black { 
-    display: none;  /* black logo is invisible in normal navigation */
+.logo-black {
+    display: none;
+    /* black logo is invisible in normal navigation */
     height: 50px;
     width: auto;
-    float: left;  /* keeps logo to the left */
-    margin: 5px 0; 
+    float: left;
+    /* keeps logo to the left */
+    margin: 5px 0;
 }
 
 /* main navigation */
 .main-nav {
-    float: right;  /* keeps menu bar to the right */
-    list-style: none;  /* removes bullet points from list */
-    margin-top: 55px;  /*to align logo and menu bar */
+    float: right;
+    /* keeps menu bar to the right */
+    list-style: none;
+    /* removes bullet points from list */
+    margin-top: 55px;
+    /*to align logo and menu bar */
 }
 
-.main-nav li { /* affects all li elements in the main-nav class */
-    display: inline-block; /* converts list items to inline-blocks */
-    margin-left: 45px;  /* adds spacking between inline-blocks */
+.main-nav li {
+    /* affects all li elements in the main-nav class */
+    display: inline-block;
+    /* converts list items to inline-blocks */
+    margin-left: 45px;
+    /* adds spacking between inline-blocks */
 }
 
 .main-nav li a:link,
-.main-nav li a:visited { /* change how the links in the lists look */
-    padding: 8px 0; /* top & bottom have 8px, left & right are 0, to separate border from text */
-    color: #fff; /* white text */
-    text-decoration: none; /* remove hyperlink underline */
+.main-nav li a:visited {
+    /* change how the links in the lists look */
+    padding: 8px 0;
+    /* top & bottom have 8px, left & right are 0, to separate border from text */
+    color: #fff;
+    /* white text */
+    text-decoration: none;
+    /* remove hyperlink underline */
     text-transform: uppercase;
-    font-size: 90%; /* 90% of the 20px from html main class */
-    border-bottom: 2px solid transparent;  /* border needs to exist in order to transition but can be transparent before hover or active */
+    font-size: 90%;
+    /* 90% of the 20px from html main class */
+    border-bottom: 2px solid transparent;
+    /* border needs to exist in order to transition but can be transparent before hover or active */
     -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s; /* border transition  from transparent to solid orange */
+    transition: border-bottom 0.2s;
+    /* border transition  from transparent to solid orange */
 }
 
 .main-nav li a:hover,
-.main-nav li a:active { /* change how the links in the lists look */
-    border-bottom: 2px solid #e67e22; /* creates underline when hover or active */
+.main-nav li a:active {
+    /* change how the links in the lists look */
+    border-bottom: 2px solid #e67e22;
+    /* creates underline when hover or active */
 }
 
 
@@ -260,7 +342,8 @@ header {
 .mobile-nav-icon {
     float: right;
     margin-top: 30px;
-    cursor: pointer;  /* a tag has no href so need to specify pointer cursor */
+    cursor: pointer;
+    /* a tag has no href so need to specify pointer cursor */
     display: none;
 }
 
@@ -272,34 +355,49 @@ header {
 
 /* sticky navigation */
 .sticky {
-    position: fixed; /* remains at the same point regardless of scrolling */
-    top: 0; /* need to define top & left corner */
+    position: fixed;
+    /* remains at the same point regardless of scrolling */
+    top: 0;
+    /* need to define top & left corner */
     left: 0;
-    width: 100%; /* occupy full brower width */
+    width: 100%;
+    /* occupy full brower width */
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 2px #e3e3e3; 
-    z-index: 9999;  /* highest vertical stacking, so sticky nav is always on top */
+    box-shadow: 0 2px 2px #e3e3e3;
+    z-index: 9999;
+    /* highest vertical stacking, so sticky nav is always on top */
 }
 
-.sticky .main-nav {margin-top: 18px;  /*to align logo and menu bar; only the changes you want to make */
+.sticky .main-nav {
+    margin-top: 18px;
+    /*to align logo and menu bar; only the changes you want to make */
 }
 
 .sticky .main-nav li a:link,
-.sticky .main-nav li a:visited { /* change how the links in the lists look in sticky navigation */
+.sticky .main-nav li a:visited {
+    /* change how the links in the lists look in sticky navigation */
     padding: 16px 0;
-    color: #555; /* dark gray text */
+    color: #555;
+    /* dark gray text */
 }
 
-.sticky .logo { display: none; } /* in sticky nav, hide white logo */
-.sticky .logo-black { display: block; } /* in sticky nav, show black logo */
+/* in sticky nav, hide white logo */
+.sticky .logo {
+    display: none;
+}
 
+/* in sticky nav, show black logo */
+.sticky .logo-black {
+    display: block;
+}
 
 /* ---------------------------------------- */
 /* FEATURES */
 /* ---------------------------------------- */
 
 .section-features .long-copy {
-    margin-bottom: 30px;  /* targets a certain area to give better white space */
+    margin-bottom: 30px;
+    /* targets a certain area to give better white space */
 }
 
 /* ---------------------------------------- */
@@ -318,32 +416,40 @@ header {
 .meals-showcase li {
     display: block;
     float: left;
-    width: 25%; /* 4 pics per row = 100/4 */
+    width: 25%;
+    /* 4 pics per row = 100/4 */
 }
 
 .meal-photo {
-    width: 100%; /* has exact width of its parent meals-showcase li */
-    margin: 0;  /* need to be done because of normalize */
-    overflow: hidden; /* keeps enlarged image inside container */
-    background-color: #000; 
+    width: 100%;
+    /* has exact width of its parent meals-showcase li */
+    margin: 0;
+    /* need to be done because of normalize */
+    overflow: hidden;
+    /* keeps enlarged image inside container */
+    background-color: #000;
 }
 
 .meal-photo img {
     opacity: 0.7;
-    width: 100%; /* makes sure the image is as wide as its container */
+    width: 100%;
+    /* makes sure the image is as wide as its container */
     height: auto;
     -webkit-transform: scale(1.15);
-    transform: scale(1.15);  /* image will be 115% */
+    transform: scale(1.15);
+    /* image will be 115% */
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;  /* creates effect with hover state */
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    /* creates effect with hover state */
 }
 
 .meal-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.04);
-    transform: scale(1.04);  /* have the pic go back close to normal */
+    transform: scale(1.04);
+    /* have the pic go back close to normal */
 }
 
 /* ---------------------------------------- */
@@ -357,49 +463,67 @@ header {
 */
 
 .section-steps {
-    background-color: #eaeaea; /* to give some contrast between sections */
+    background-color: #eaeaea;
+    /* to give some contrast between sections */
 }
 
 .steps-box:first-child {
-    text-align: right;  /* works for images too because they are inline block elements */
-    padding-right: 3%;  /* for responsive website */
-    margin-top: 30px;  /* space between heading */
+    text-align: right;
+    /* works for images too because they are inline block elements */
+    padding-right: 3%;
+    /* for responsive website */
+    margin-top: 30px;
+    /* space between heading */
 }
 
 .steps-box:last-child {
-    padding-left: 3%; /* for responsive website */
+    padding-left: 3%;
+    /* for responsive website */
     margin-top: 70px;
 }
 
 .app-screen {
-    width: 40%;  /* image to be 40% of the box size */
+    width: 40%;
+    /* image to be 40% of the box size */
 }
 
 .works-step {
-    margin-bottom: 50px;  /* space between steps */
+    margin-bottom: 50px;
+    /* space between steps */
 }
 
 .works-step:last-of-type {
     margin-bottom: 80px;
 }
 
-.works-step div { /* targets numbers in steps */
-    color: #e67e22;  /* number color */
-    border: 2px solid #e67e22; /* create organe border around number */
-    display: inline-block; /* so it doesnt create a line break */
-    border-radius: 50%;  /* make border a circle */
-    height: 55px; /* circle height */
-    width: 55px;  /* circle width */
-    text-align: center;  /* center step number in box */
+.works-step div {
+    /* targets numbers in steps */
+    color: #e67e22;
+    /* number color */
+    border: 2px solid #e67e22;
+    /* create organe border around number */
+    display: inline-block;
+    /* so it doesnt create a line break */
+    border-radius: 50%;
+    /* make border a circle */
+    height: 55px;
+    /* circle height */
+    width: 55px;
+    /* circle width */
+    text-align: center;
+    /* center step number in box */
     padding: 5px;
-    float: left;  /* to bring text next to step number */
+    float: left;
+    /* to bring text next to step number */
     font-size: 150%;
-    margin-right: 25px; /* space between step number and text */
+    margin-right: 25px;
+    /* space between step number and text */
 }
 
 .btn-app:link,
 .btn-app:visited {
-    border: 0;  /* removes border created by a tag styling */
+    border: 0;
+    /* removes border created by a tag styling */
 }
 
 .btn-app img {
@@ -427,26 +551,34 @@ header {
 /* ---------------------------------------- */
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
-    background-size: cover;  /* fill entire width of browser  */
-    color: #fff;  /* white text */
-    background-attachment: fixed;  /* image stays fixed while content moves over it */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    /* fill entire width of browser  */
+    color: #fff;
+    /* white text */
+    background-attachment: fixed;
+    /* image stays fixed while content moves over it */
 }
 
 blockquote {
     padding: 3%;
-    font-style: italic;  /* make sure italics are included in Google Fonts used on HTML page */
+    font-style: italic;
+    /* make sure italics are included in Google Fonts used on HTML page */
     line-height: 145%;
-    position: relative; /* if child is absolute, parent must be set to relative */
+    position: relative;
+    /* if child is absolute, parent must be set to relative */
     margin-top: 20px;
 }
 
 blockquote:before {
-    content: "\201C"; /*special character symbol for double left quotation marks */
+    content: "\201C";
+    /*special character symbol for double left quotation marks */
     font-size: 400%;
-    display: block; /* so text drops a line */
-    position: absolute; /* fix the quotations in a certian area */
+    display: block;
+    /* so text drops a line */
+    position: absolute;
+    /* fix the quotations in a certian area */
     top: -5px;
     left: -10px;
 }
@@ -454,15 +586,18 @@ blockquote:before {
 cite {
     font-size: 90%;
     margin-top: 25px;
-    display: block; /*drops pic down a line*/
+    display: block;
+    /*drops pic down a line*/
 }
 
 
 cite img {
     height: 50px;
-    border-radius: 50%; /* makes pic a circle */
-    margin-right: 10px; 
-    vertical-align: middle;  /* aligns pic and text */
+    border-radius: 50%;
+    /* makes pic a circle */
+    margin-right: 10px;
+    vertical-align: middle;
+    /* aligns pic and text */
 }
 
 /* ---------------------------------------- */
@@ -476,38 +611,48 @@ cite img {
 .plan-box {
     background-color: #fff;
     border-radius: 5px;
-    width: 90%;  /* 90% of parent width, parent is col class */
-    margin-left: 5%;  /* used to center box, half of remaining 10% after width */
+    width: 90%;
+    /* 90% of parent width, parent is col class */
+    margin-left: 5%;
+    /* used to center box, half of remaining 10% after width */
     -webkit-box-shadow: 0 2px 2px #c1c1c1;
-    box-shadow: 0 2px 2px #c1c1c1; /* 1st value is x axis offset, 2nd value is y axis offset, 3rd value is the blur, 4th value is the color */
+    box-shadow: 0 2px 2px #c1c1c1;
+    /* 1st value is x axis offset, 2nd value is y axis offset, 3rd value is the blur, 4th value is the color */
 }
 
 .plan-box div {
-    padding: 15px;  /* space between divs in plan box */
+    padding: 15px;
+    /* space between divs in plan box */
     border-bottom: 1px solid #ededed;
 }
 
 .plan-box div:first-child {
-    background-color: #fafafa;  /* slight contrast draws in the eye */
+    background-color: #fafafa;
+    /* slight contrast draws in the eye */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .plan-box div:last-child {
-    text-align: center;  /* center buttons */
-    border: 0;  /* remove bottom border from bottom boxes */
+    text-align: center;
+    /* center buttons */
+    border: 0;
+    /* remove bottom border from bottom boxes */
 }
 
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
-    font-weight: 100;  /* lowest from Google Font used in project */
+    font-weight: 100;
+    /* lowest from Google Font used in project */
     color: #e67e22;
 }
 
 .plan-price span {
-    font-size: 30%; /* 30% of parent plan-price at 300% */
-    font-weight: 300;  /* to remove font weight change from parent */
+    font-size: 30%;
+    /* 30% of parent plan-price at 300% */
+    font-weight: 300;
+    /* to remove font weight change from parent */
 }
 
 .plan-price-meal {
@@ -519,7 +664,8 @@ cite img {
 }
 
 .plan-box ul li {
-    padding: 5px 0;  /* space between listed elements */
+    padding: 5px 0;
+    /* space between listed elements */
 }
 
 /* ---------------------------------------- */
@@ -528,15 +674,18 @@ cite img {
 
 .contact-form {
     width: 60%;
-    margin: 0 auto;  /* centers contact form in parent element */
+    margin: 0 auto;
+    /* centers contact form in parent element */
 }
 
 input[type=text],
 input[type=email],
 select,
 textarea {
-    width: 100%;  /* makes these elements take up entire width of box */
-    padding: 7px; /* adds space between these elements */
+    width: 100%;
+    /* makes these elements take up entire width of box */
+    padding: 7px;
+    /* adds space between these elements */
     border-radius: 3px;
     border: 1px solid #ccc;
 }
@@ -546,11 +695,13 @@ textarea {
 }
 
 input[type=checkbox] {
-    margin: 10px 5px 10px 0; /* top right bottom left */
+    margin: 10px 5px 10px 0;
+    /* top right bottom left */
 }
 
 *:focus {
-    outline: none;  /* removes blue box on active input area */
+    outline: none;
+    /* removes blue box on active input area */
 }
 
 /* ---------------------------------------- */
@@ -563,31 +714,37 @@ footer {
 }
 
 .footer-nav {
-    list-style: none;  /* remove bullet points */
+    list-style: none;
+    /* remove bullet points */
     float: left;
 }
 
 .social-links {
-    list-style: none;  /* remove bullet points */
+    list-style: none;
+    /* remove bullet points */
     float: right;
 }
 
-.footer-nav li, 
+.footer-nav li,
 .social-links li {
-    display: inline-block; /* will not cause line break so links will be side by side, able now to set margin */
-    margin-right: 25px; /* space between links */
+    display: inline-block;
+    /* will not cause line break so links will be side by side, able now to set margin */
+    margin-right: 25px;
+    /* space between links */
 }
 
 .social-links:last-child {
-    margin-right: 0; /* to make social icon links flush to the right */
+    margin-right: 0;
+    /* to make social icon links flush to the right */
 }
 
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
-    text-decoration: none; /* remove hyperlink underlining */
-    border: 0; 
+    text-decoration: none;
+    /* remove hyperlink underlining */
+    border: 0;
     color: #a7a7a7;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
@@ -602,7 +759,8 @@ footer {
 
 .social-links li a:link,
 .social-links li a:visited {
-    font-size: 150%; /* increase icon size */
+    font-size: 150%;
+    /* increase icon size */
 }
 
 .fb-icon,
@@ -645,10 +803,11 @@ footer p {
 /* ANIMATIONS */
 /* ---------------------------------------- */
 
-.js--wp-1, 
+.js--wp-1,
 .js--wp-2,
 .js--wp-3 {
-    opacity: 0;  /* initially makes element not visible */
+    opacity: 0;
+    /* initially makes element not visible */
     animation-duration: 1s;
 }
 
@@ -657,16 +816,8 @@ footer p {
 }
 
 .js--wp-1.animated,
-.js--wp-2.animated, 
+.js--wp-2.animated,
 .js--wp-3.animated {
-    opacity: 1;  /* makes element visible when animation activates */
+    opacity: 1;
+    /* makes element visible when animation activates */
 }
-
-
-
-
-
-
-
-
-

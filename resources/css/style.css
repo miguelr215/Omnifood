@@ -502,7 +502,7 @@ header {
     /* number color */
     border: 2px solid #e67e22;
     /* create organe border around number */
-    display: inline-block;
+    display: block;
     /* so it doesnt create a line break */
     border-radius: 50%;
     /* make border a circle */

@@ -1,4 +1,4 @@
-# Omnifood
+# Omnifood Food Delivery
 
 **Summary:** This SPA was a Udemy project teaching foundational and advanced HTML and CSS concepts, in order to develop a business website for a ficticious food delivery company.
 

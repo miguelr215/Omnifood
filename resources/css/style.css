@@ -456,11 +456,6 @@ header {
 /* HOW IT WORKS */
 /* ---------------------------------------- */
 
-/*  became un-needed
-.steps-box {
-    margin-top: 30px;  space between heading 
-}
-*/
 
 .section-steps {
     background-color: #eaeaea;
@@ -468,7 +463,7 @@ header {
 }
 
 .steps-box:first-child {
-    text-align: right;
+    text-align: center;
     /* works for images too because they are inline block elements */
     padding-right: 3%;
     /* for responsive website */
